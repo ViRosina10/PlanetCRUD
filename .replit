@@ -2,8 +2,9 @@ entrypoint = "main.dart"
 modules = ["dart-3.3"]
 
 [nix]
-channel="stable-24_05"
+channel = "stable-24_05"
 
 [deployment]
+flutter pub get
 run = ["dart", "main.dart"]
 deploymentTarget = "cloudrun"
